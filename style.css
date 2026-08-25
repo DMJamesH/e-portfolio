@@ -98,7 +98,7 @@ section:nth-of-type(even) {
 
 nav {
   height: 100px;
-  width: 200%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -440,6 +440,12 @@ footer {
 @media (max-width: 768px) {
   nav {
     height: 68px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .personal__logo {
+    margin: 0;
   }
 
   h1 {
@@ -461,6 +467,14 @@ footer {
   .project__description {
     left: 30px;
     padding-right: 30px;
+  }
+
+  .nav__link--anchor {
+    margin: 0;
+  }
+
+  .nav__link:not(:last-child) {
+    display: none;
   }
 }
 
